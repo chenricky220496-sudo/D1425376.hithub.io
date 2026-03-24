@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>神秘運勢占卜</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔮 每日神秘占卜 🔮</h1>
+            <p>點擊神秘的水晶球，預見你今日的專屬運勢</p>
+        </header>
+
+        <main>
+            <div id="start-section" class="active">
+                <div class="crystal-ball" id="draw-btn" title="點擊占卜">
+                    <div class="glow"></div>
+                    <div class="stars">✨</div>
+                </div>
+                <button class="action-btn" id="draw-btn-text">進行占卜</button>
+            </div>
+
+            <div id="loading-section" class="hidden">
+                <div class="crystal-ball loading">
+                    <div class="glow pulse"></div>
+                </div>
+                <p>正在為您解讀星象...</p>
+            </div>
+
+            <div id="result-section" class="hidden">
+                <div class="result-card">
+                    <h2 id="result-type">✨ 大吉 ✨</h2>
+                    <p id="result-desc" class="desc">說明文字</p>
+                    
+                    <div class="aspects">
+                        <div class="aspect">
+                            <span class="icon">💼</span>
+                            <span class="label">工作：</span>
+                            <span class="text" id="result-work">...</span>
+                        </div>
+                        <div class="aspect">
+                            <span class="icon">📚</span>
+                            <span class="label">學業：</span>
+                            <span class="text" id="result-study">...</span>
+                        </div>
+                        <div class="aspect">
+                            <span class="icon">❤️</span>
+                            <span class="label">愛情：</span>
+                            <span class="text" id="result-love">...</span>
+                        </div>
+                        <div class="aspect">
+                            <span class="icon">💰</span>
+                            <span class="label">金錢：</span>
+                            <span class="text" id="result-money">...</span>
+                        </div>
+                    </div>
+                    
+                    <div class="closing">
+                        <p id="result-closing">祝你好運！</p>
+                    </div>
+                </div>
+                <button class="action-btn outline" id="reset-btn">再占卜一次</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
