@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>神秘星空運勢占卜</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 首頁區塊 -->
+        <div id="home-section" class="active">
+            <h1 class="title">✨ 神秘星空運勢占卜 ✨</h1>
+            <p class="subtitle">放鬆心情，在心中默念你的問題，<br>點擊下方水晶球，揭曉你今日的宇宙指引。</p>
+            
+            <div class="orb-container">
+                <div class="glow-orb" id="draw-btn">
+                    <span class="orb-text">點擊占卜</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 載入中區塊 -->
+        <div id="loading-section">
+            <h2 class="loading-text">🌌 正在連結宇宙能量...</h2>
+            <div class="spinner"></div>
+        </div>
+
+        <!-- 結果區塊 -->
+        <div id="result-section">
+            <div class="result-card">
+                <h2 id="result-type" class="result-type">大吉</h2>
+                <p id="result-desc" class="result-desc">簡短說明</p>
+                
+                <div class="aspects-grid">
+                    <div class="aspect-item">
+                        <div class="aspect-icon">💼</div>
+                        <h3 class="aspect-title">工作</h3>
+                        <p id="aspect-work">內容...</p>
+                    </div>
+                    <div class="aspect-item">
+                        <div class="aspect-icon">📚</div>
+                        <h3 class="aspect-title">學業</h3>
+                        <p id="aspect-study">內容...</p>
+                    </div>
+                    <div class="aspect-item">
+                        <div class="aspect-icon">❤️</div>
+                        <h3 class="aspect-title">愛情</h3>
+                        <p id="aspect-love">內容...</p>
+                    </div>
+                    <div class="aspect-item">
+                        <div class="aspect-icon">💰</div>
+                        <h3 class="aspect-title">金錢</h3>
+                        <p id="aspect-money">內容...</p>
+                    </div>
+                </div>
+                
+                <div class="closing-phrase">
+                    <p id="result-closing">結語</p>
+                </div>
+                
+                <button id="retry-btn" class="btn-primary">再占卜一次 🔄</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 粒子特效容器 -->
+    <canvas id="particles-canvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
